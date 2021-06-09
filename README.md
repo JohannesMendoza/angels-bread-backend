@@ -7,5 +7,11 @@
 ### Creating the Database
 * The database is composed of documents, all with the same fields
 	* The Schema is as follows:
-
-	
+	* ![](https://github.com/JohannesMendoza/angels-bread-backend/blob/master/readme-images/schema.png)
+	* The pathName field indicates which image will be used in the front-end to represent the item
+### Functions
+* createMenuItem(name, price, description, tags, pathname)
+* createMenuDB()
+* getMenu()
+* getCategoryMenu()
+* 
