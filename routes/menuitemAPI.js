@@ -52,7 +52,7 @@ async function createMenuItem(nm, pr, desc, tgs, pn) {
     });
 
     const result = await item.save();
-    console.log(result);
+    //console.log(result);
 }
 
 function createMenuDB() {
@@ -78,20 +78,17 @@ function createMenuDB() {
 async function getMenu() {
     const items = await MenuItem
         .find()
-    //.find({ name: /.*frozen.*/i })
-    //.select({ name: 1, price: 1, pathName: 1 });
     return items;
 }
 
 async function getCategoryMenu(categ) {
     const items = await MenuItem
         .find({ tags: categ });
-    //.select({ name: 1, price: 1, pathName: 1 });
     return items;
 }
 
 const port = process.env.PORT || 9000;
-app.listen(port, () => console.log(`Listening on Port ${port}!!!`));
+app.listen(port, () => console.log(`Listening on Port ${port}`));
 
 
 getMenu().then(items => {
@@ -114,8 +111,7 @@ app.get('/api/menuItem/:category', (req, res) => {
 
 
 router.get("/", function (req, res, next) {
-    console.log('API IS WORKING BRO!!!');
-    res.send({ data: "hello" });
+    console.log('API IS WORKING');
 });
 
 module.exports = router;
