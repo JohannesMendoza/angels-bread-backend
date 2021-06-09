@@ -22,7 +22,7 @@
 * getCategoryMenu(category)
 	* asynchronous function that uses an async and await to obtain MenuItems with the specific tag denoted in the parameter
 
-### HTTP GET implementations
+### Handling HTTP GET requests
 * /api/menuItem
 	* When this path is selected, the API responds by calling the getMenu() function and sending the return value back
 * /api/menuItem/:category
