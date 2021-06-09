@@ -24,4 +24,6 @@
 
 ### HTTP GET implementations
 * /api/menuItem
+	* When this path is selected, the API responds by calling the getMenu() function and sending the return value back
 * /api/menuItem/:category
+	* When this path is selected, the API responds by calling the getCategoryMenu(category) function and sending the return value back
